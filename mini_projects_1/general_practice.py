@@ -101,3 +101,4 @@ elif score >= 60:
 
 else: 
     print("Next time study more!")
+    
