@@ -246,15 +246,37 @@
 # multiple w * h 
 # print the final sqft 
 
-print("Please enter the dimensions of the room in sqft")
+# print("Please enter the dimensions of the room in sqft")
 
 
-def calculate_area(w, h):
-    area_sqft = w * h
-    print(f"The total sqft is: {area_sqft}")
+# def calculate_area(w, h):
+#     area_sqft = w * h
+#     print(f"The total sqft is: {area_sqft}")
 
-width = int(input("Enter the width of the room: "))
-height = int(input("Enter the height of the room: "))
+# width = int(input("Enter the width of the room: "))
+# height = int(input("Enter the height of the room: "))
 
-calculate_area(width, height)
-    
+# calculate_area(width, height)
+
+#########################################################################################################
+
+# Create a dictionary that will let you add a student and their grade 
+# You will need a while loop to complete the task
+
+student_grades = {}
+
+off = False
+
+while not off:
+    name = input("Enter student name: ")
+    grade = input("Enter student grade: ")
+    student_grades[name] = grade 
+    print("Student added sucessfully!")
+    print(student_grades)
+    add_another = input("Would you like to add another student? Y or N: ").lower()
+    if add_another == "y":
+        pass
+    else:
+        off = True
+
+
